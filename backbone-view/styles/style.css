@@ -1,0 +1,157 @@
+body {
+	background-color: black;
+}
+
+a {
+	color:rgb( 242,233,99 );
+	text-decoration: none;
+}
+
+#app-view {
+	text-align: center;
+	margin:0.5em 0;
+	color:rgb( 242,233,99 );
+}
+
+#tutorial {
+	background-color: white;
+	border: 1px solid black;
+}
+
+h1 {
+	font-size:3em;
+	font-weight:600;
+	margin-top:1em;
+	margin-bottom: 1em;
+}
+
+#loading-screen {
+	background-color:black;
+	color:white;
+}
+
+#loading-screen h1 {
+	-webkit-animation: loadingScreenMove 4s; /* Chrome, Safari, Opera */
+    animation: loadingScreenMove 4s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes loadingScreenMove {
+    0%   {background: red; top:0px;}
+    25%  {background: yellow; top:75px;}
+    50%  {background: blue; top:100px;}
+    75%  {background: green; top:75px;}
+    100% {background: red; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes loadingScreenMove {
+    0%   {background: red; top:0px;}
+    25%  {background: yellow; top:75px;}
+    50%  {background: blue; top:100px;}
+    75%  {background: green; top:75px;}
+    100% {background: red; top:0px;}
+}
+
+#menu-screen button {
+
+	background: #3498db;
+	background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+	background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+	background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+	background-image: -o-linear-gradient(top, #3498db, #2980b9);
+	background-image: linear-gradient(to bottom, #3498db, #2980b9);
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0px;
+	font-family: Arial;
+	color: rgb( 242,233,99 );
+	font-size: 25px;
+	padding: 30px 40px 30px 40px;
+	border: solid #1f628d 2px;
+	text-decoration: none;
+}
+
+#menu-screen button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#leaderboard-screen {
+	margin:3em 15em;
+
+}
+
+#leaderboard-screen li {
+	border: solid #1f628d 2px;
+	color: rgb( 242,233,99 );
+	background: #3498db;
+	padding: 0.5em 3em;
+}
+
+ol {
+	margin-bottom: 2em;
+}
+
+#leaderboard-screen h2 {
+	font-size:4em;
+	margin-bottom:1em;
+}
+
+.score-wrappers {
+	display:inline-block;
+}
+
+#animated-leader-box {
+	-webkit-animation: myfirst 5s infinite; /* Chrome, Safari, Opera */
+    animation: myfirst 5s infinite;
+    -webkit-animation-direction: alternate;
+    border: 2px solid rgb(242,233,99);
+    position: relative;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+  	0%   {border: 1px solid red; left:0; top: 0px;}
+    25%  {border: 1px solid yellow; left:100px; top:50px;}
+    50%  {border: 1px solid red; left:0px; top:0px;}
+    100% {border: 1px solid yellow; left:100; top:50px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {border: 1px solid red;}
+    25%  {border: 1px solid yellow;}
+    50%  {border: 1px solid red;}
+    100% {border: 1px solid yellow;}
+}
+
+#main-menu-animated {
+	padding-bottom:4em;
+	-webkit-animation: bleedingText 5s infinite;
+	animation: bleedingText 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bleedingText {
+  	0%   {color: red; left:0; font-size:1em;}
+    25%  {color: rgb(242,233,99); font-size:1.5em;}
+    50%  {color: red; left:0px; font-size:2em;}
+    100% {color: rgb(242,233,99); font-size:1em;}
+}
+
+/* Standard syntax */
+@keyframes bleedingText {
+    0%   {color: red;}
+    25%  {color: rgb(242,233,99);}
+    50%  {color: red;}
+    100% {color: rgb(242,233,99);}
+}
+
+
+

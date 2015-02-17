@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+	
+<html>
+	<head>
+		<title> Guessing Game: Backbone </title>
+		<link rel="stylesheet" href="backbone-view/styles/reset.css">
+		<link rel="stylesheet" href="backbone-view/styles/style.css">
+		<title> Travis' Game </title>
+	</head>
+	<body>
+		<section id ='app-view'>
+
+			<section id='loading-screen' class='page-view'>
+				<h1> ****** LOADING ****** </h1>
+			</section>
+
+			<section id='menu-screen' class='page-view'>
+				<h1> Unicorn <span id='main-menu-animated'> Killing </span> Spree </h1>			
+				<a href="#game"> <button id='play-button'> Play </button> </a>
+				<a href="#leaderboard"> <button id='leader-button'>Leaderboard </button> </a>
+				<a href="#settings"> <button id='settings-button'> Settings </button> </a>
+			</section>
+
+			<section id='game-screen' class='page-view'>
+				<script src="backbone-view/scripts/pon.js"></script>
+				<canvas id="tutorial" width="900" height="300"></canvas>
+			</section>
+
+			<section id='leaderboard-screen' class='page-view'>
+				<div id='animated-leader-box'>
+					<h1> Leaderboard </h2>
+					<div class ='score-wrappers'>
+						<ol class='leaderboard-list'>
+							<li> Travis </li>
+							<li> Travis </li>
+							<li> Travis </li>
+							<li> Travis </li>
+							<li> Travis </li>
+							<li> Travis </li>
+						</ol>
+					</div>
+					<div class ='score-wrappers'>
+						<ol class='leaderboard-list'>
+							<li> 6005 </li>
+							<li> 4566 </li>
+							<li> 3442 </li>
+							<li> 1133 </li>
+							<li> 678 </li>
+							<li> 543 </li>
+						</ol>
+					</div>
+				</div>
+			</section>
+
+			<section id='settings-screen' class='page-view'>
+				Settings Screen
+			</section>
+
+		</section>
+
+		<script type='text/javascript' src='backbone-view/bower_components/jquery/dist/jquery.min.js'></script>
+		<script type='text/javascript' src='backbone-view/bower_components/underscore/underscore-min.js'></script>
+		<script type='text/javascript' src='backbone-view/bower_components/backbone/backbone.js'></script>
+		<script type='text/javascript' src='backbone-view/scripts//views/SettingsView.js'></script>
+		<script type='text/javascript' src='backbone-view/scripts//views/LeaderboardView.js'></script>
+		<script type='text/javascript' src='backbone-view/scripts//views/GameView.js'></script>
+		<script type='text/javascript' src='backbone-view/scripts//views/LoadingView.js'></script>
+		<script type='text/javascript' src='backbone-view/scripts//views/MenuView.js'></script>
+		<script type='text/javascript' src='backbone-view/scripts//views/AppView.js'></script>
+		<script type='text/javascript' src='backbone-view/scripts/main.js'></script>
+	</body>
+</html>
